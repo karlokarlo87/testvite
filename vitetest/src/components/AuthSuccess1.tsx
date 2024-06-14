@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const AuthSuccess = () => {
+const AuthSuccess1 = () => {
   return (
     <>
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -19,7 +19,7 @@ const AuthSuccess = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span className="sr-only">Success1</span>
+              <span className="sr-only">blog</span>
             </div>
             <p className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
               Password Successfully Updated.
@@ -29,7 +29,7 @@ const AuthSuccess = () => {
               to="blogs"
               className="py-2 px-3 text-sm font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:focus:ring-primary-900"
             >
-              Log In
+              blogs
             </Link>
             <Link
               to="contact"
@@ -43,4 +43,4 @@ const AuthSuccess = () => {
     </>
   );
 };
-export default AuthSuccess;
+export default AuthSuccess1;

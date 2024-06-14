@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthSuccess from "./components/AuthSuccess";
-import { Outlet } from "react-router-dom";
+import AuthSuccess1 from "./components/AuthSuccess1";
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AuthSuccess />}>
-            <Route index element={<AuthSuccess />} />
-            <Route path="blogs" element={<AuthSuccess />} />
-            <Route path="contact" element={<AuthSuccess />} />
+          <Route>
+            <Route path="/blogs" element={<AuthSuccess />} />
+            <Route path="/contact" element={<AuthSuccess1 />} />
             <Route path="*" element={<AuthSuccess />} />
           </Route>
         </Routes>
